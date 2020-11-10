@@ -3,16 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Avengers Character Search</title>
     <link rel="stylesheet" href="styles.css">
     <script src="app.js"></script>
 </head>
 <body>
-    <div class = "Header"><h1>Avengers Character Search</h1></div>
-    <div class = "searchbtn">
-        <button type="Search" id = "button" class="searchButton" style = "color:black">Search</button>
-    </div>
-    <div id = "results">
+    <div class = container ></div>
+        <div class = "Header"><h1>Avengers Character Search</h1></div>
+        <div class = "Header2"><h2>Search by Full Name or Alias</h2></div>
+        <div class = "searchbtn">
+            <input type="text" id = "text_Field" class="searchTerm" placeholder="e.g Captain America or Steve Rogers">
+            <button type="Search" id = "button" class="searchButton">Search</button>
+        </div>
+        <div class = Results><h2>Result</h2></div>
+        <div id = "result"></div>
     </div>
 </body>
 </html>

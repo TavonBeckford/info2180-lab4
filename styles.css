@@ -1,4 +1,137 @@
+body {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.Header {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background:skyblue;
+ }
+ 
 .Header h1{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    text-align: center;
     font-size: 36px;
+    color:white;
+    text-transform: uppercase;
+    
+}
+
+.Header2 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.Header2 h2{
+    grid-column-start:2;
+    grid-column-end: 4;
+    font-size: 18px;
     color: black;
+}
+
+.searchbtn{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.searchbtn .searchTerm{
+    grid-column-start:2;
+    grid-column-end: 5;
+    width: 586px;
+    border: 1px solid rgb(192, 189, 189);
+    box-shadow: 1px 1px rgb(192, 189, 189) ;
+    border-right: none;
+    padding: 5px;
+    height: 23px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+}
+.searchTerm:focus{
+    color: #00B4CC;
+}
+
+
+.searchButton{
+    width: 90px;
+    height: 36px;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    background: rgb(255, 74, 74);
+    border-radius: 5px;
+    border: 3px solid rgb(255, 74, 74);
+    transition:  
+        opacity 250ms linear;
+
+}
+.searchButton:active {
+    transform: scale(0.98);
+  }
+
+.searchButton:hover {
+    opacity: 0.7;
+}
+.searchButton:focus, [type="Search"]:focus {
+    outline: none;
+ }
+
+
+
+.searchbtn .searchButton{
+    grid-column-start:5;
+    grid-column-end: 6;
+}
+
+.Results {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+.Results{
+    grid-column-start:1;
+    grid-column-end: 7;
+}
+
+.Results h2{
+    grid-column-start:2;
+    grid-column-end: 6;
+    border-bottom: 2px solid rgb(187, 187, 187);
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+
+#result{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 20px 50px auto;
+
+}
+#result h3{
+    grid-column-start:2;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+}
+#result ul{
+    grid-column-start:2;
+    grid-column-end: 6; 
+}
+#result h4{
+    grid-column-start:2;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+#result p{
+    grid-column-start:2;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 4;
+
 }
